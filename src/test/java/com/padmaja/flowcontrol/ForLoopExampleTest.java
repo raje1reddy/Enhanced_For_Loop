@@ -32,8 +32,21 @@ public class ForLoopExampleTest {
         int expectedresult = 0;
         assertEquals(expectedresult,result);
     }
+    @Test
+    public void ForLoopExample12() {
+        int result = forLoopExample.tablesExample1();
+        System.out.println(result);
+        int expectedresult = 0;
+        assertEquals(expectedresult,result);
+    }
 
-
+    @Test
+    public void ForLoopExample15() {
+        int result = forLoopExample.tablesExample();
+        System.out.println(result);
+        int expectedresult = 0;
+        assertEquals(expectedresult,result);
+    }
 }
 
 
