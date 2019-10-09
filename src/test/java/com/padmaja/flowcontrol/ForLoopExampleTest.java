@@ -41,7 +41,7 @@ public class ForLoopExampleTest {
     }
 
     @Test
-    public void ForLoopExample1() {
+    public void ForLoopExample15() {
         int result = forLoopExample.tablesExample();
         System.out.println(result);
         int expectedresult = 0;
