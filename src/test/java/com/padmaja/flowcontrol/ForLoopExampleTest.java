@@ -36,7 +36,7 @@ public class ForLoopExampleTest {
     public void ForLoopExample12() {
         int result = forLoopExample.tablesExample1();
         System.out.println(result);
-        int expectedresult = 0;
+        int expectedresult = 1;
         assertEquals(expectedresult,result);
     }
 
