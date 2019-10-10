@@ -3,15 +3,15 @@ import java.lang.String;
 import java.util.ArrayList;
 
 public class ForLoopExample {
-    public  int tablesExample() {
+    public  ArrayList<String> tablesExample() {
         ArrayList <String> mylist = new ArrayList<String>();
         mylist.add("java");
         mylist.add("loop");
         for(String val: mylist)
             System.out.println(val);
-        return 0;
+        return mylist;
         }
-    public  int tablesExample1() {
+    public  ArrayList<String> tablesExample1() {
         ArrayList <String> exams = new ArrayList<String>();
         exams.add("java");
         exams.add("oracle");
@@ -28,7 +28,7 @@ public class ForLoopExample {
     for(ArrayList<String> nestedListedElement : nestedArrayList)
         for(String element: nestedListedElement)
            System.out.println(element);
-    return 1;
+    return tablesExample();
     }
 
 }
