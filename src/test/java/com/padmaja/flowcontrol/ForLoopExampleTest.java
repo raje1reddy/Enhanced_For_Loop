@@ -31,7 +31,10 @@ public class ForLoopExampleTest {
     public void ForLoopExample1() {
         ArrayList<String> result = forLoopExample.tablesExample();
         System.out.println("result of tablesExample" + result);
-        ArrayList<String> expectedresult = result;
+        ArrayList<String> expectedresult = new ArrayList<String>();
+        expectedresult.add("java");
+        expectedresult.add("loop");
+        for(String val: expectedresult)
         //expectedresult.add("java, loop");
         System.out.println("expected result"+ expectedresult);
         assertEquals(expectedresult,result);
@@ -40,7 +43,10 @@ public class ForLoopExampleTest {
     public void ForLoopExample12() {
         ArrayList<String> result = forLoopExample.tablesExample1();
         System.out.println("result of tablesExample1"+ result);
-        ArrayList<String> expectedresult = result ;
+        ArrayList<String> expectedresult = new ArrayList<String>();
+        expectedresult.add("java");
+        expectedresult.add("loop");
+        for(String val: expectedresult)
         assertEquals(expectedresult,result);
     }
 
@@ -48,8 +54,11 @@ public class ForLoopExampleTest {
     public void ForLoopExample15() {
         ArrayList<String> result = forLoopExample.tablesExample();
         System.out.println("result of tablesExample" + result);
-        ArrayList<String> expectedresult1;
-     //   assertEquals(expectedresult1,result);
+        ArrayList<String> expectedresult1=new ArrayList<String>();
+        expectedresult1.add("java");
+        expectedresult1.add("loop");
+        for(String val: expectedresult1);
+       assertEquals(expectedresult1,result);
     }
 }
 
