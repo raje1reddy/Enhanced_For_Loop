@@ -34,19 +34,25 @@ public class ForLoopExampleTest {
         ArrayList<String> expectedresult = new ArrayList<String>();
         expectedresult.add("java");
         expectedresult.add("loop");
-        for(String val: expectedresult)
-        //expectedresult.add("java, loop");
-        System.out.println("expected result"+ expectedresult);
         assertEquals(expectedresult,result);
     }
     @Test
     public void ForLoopExample12() {
-        ArrayList<String> result = forLoopExample.tablesExample1();
+        ArrayList <ArrayList<String>> result = forLoopExample.tablesExample1();
         System.out.println("result of tablesExample1"+ result);
-        ArrayList<String> expectedresult = new ArrayList<String>();
-        expectedresult.add("java");
-        expectedresult.add("loop");
-        for(String val: expectedresult)
+        ArrayList <String> exams = new ArrayList<String>();
+        exams.add("java");
+        exams.add("oracle");
+        ArrayList <String> levels = new ArrayList<String>();
+        levels.add("basic");
+        levels.add("advanced");
+        ArrayList <String> grade = new ArrayList<String>();
+        grade.add("pass");
+        grade.add("fail");
+       ArrayList <ArrayList<String>>  expectedresult = new ArrayList<ArrayList<String>>();
+    expectedresult.add(exams);
+    expectedresult.add(levels);
+    expectedresult.add(grade);
         assertEquals(expectedresult,result);
     }
 
@@ -57,7 +63,6 @@ public class ForLoopExampleTest {
         ArrayList<String> expectedresult1=new ArrayList<String>();
         expectedresult1.add("java");
         expectedresult1.add("loop");
-        for(String val: expectedresult1);
        assertEquals(expectedresult1,result);
     }
 }
