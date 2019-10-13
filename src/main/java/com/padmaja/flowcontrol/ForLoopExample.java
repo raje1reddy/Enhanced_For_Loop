@@ -11,7 +11,7 @@ public class ForLoopExample {
             System.out.println(val);
         return mylist;
         }
-    public  ArrayList<String> tablesExample1() {
+    public  ArrayList <ArrayList<String>> tablesExample1() {
         ArrayList <String> exams = new ArrayList<String>();
         exams.add("java");
         exams.add("oracle");
@@ -28,7 +28,7 @@ public class ForLoopExample {
     for(ArrayList<String> nestedListedElement : nestedArrayList)
         for(String element: nestedListedElement)
            System.out.println(element);
-    return tablesExample();
+    return nestedArrayList;
     }
 
 }
